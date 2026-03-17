@@ -1,0 +1,155 @@
+* {
+  font-family: 'Montserrat', sans-serif;
+}
+
+body,
+html {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient(to bottom right, lightblue, #87cefa, #f0f8ff);
+}
+
+footer {
+  margin-top: auto;
+  text-align: center;
+  padding: 20px 0;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+footer p {
+  color: #888;
+  font-size: 14px;
+  opacity: 0.7;
+  letter-spacing: 1px;
+  transition: 0.3s ease;
+}
+
+footer p:hover {
+  opacity: 1;
+  color: #aaa;
+}
+
+.glass {
+  background: rgba(255, 255, 255, 0.22);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 8px 25px -15px rgba(0, 0, 0, 0.5);
+  border: 1px solid white;
+  border-radius: 12px;
+}
+
+/* CABEÇALHO E NAV */
+.cabecalho-site {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  background: rgba(255, 255, 255, 0.22);
+  backdrop-filter: blur(10px);
+}
+
+.nav-desafios {
+  padding: 10px;
+  margin-top: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  list-style: none;
+  gap: 45px;
+  background: rgba(255, 255, 255, 0.22);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 8px 25px -15px rgba(0, 0, 0, 0.5);
+}
+
+.nav-desafios a {
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: bold;
+  color: black;
+  position: relative;
+  display: inline-block;
+  color: black;
+}
+
+.nav-left {
+  position: absolute;
+  left: 20px;
+}
+
+.nav-center {
+  margin: auto;
+  display: flex;
+  gap: 60px;
+}
+
+.nav-desafios a::after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  bottom: -2px;
+  width: 0;
+  height: 2px;
+  background: black;
+  transition: all 0.25s ease;
+  transform: translateX(-50%);
+}
+
+.nav-desafios a:hover::after {
+  width: 100%;
+}
+
+#click {
+  rotate: -30deg;
+  left: 340px;
+  top: 210px;
+  position: absolute;
+  width: 25%;
+  background-size: contain;
+  background-repeat: no-repeat;
+  animation: tapLoop 4s infinite;
+  transform-origin: bottom center;
+}
+
+@keyframes tapLoop {
+  0%,
+  20% {
+    background-image: url('../images/cliqueaqui.png');
+    transform: translateY(0) scale(1);
+    opacity: 1;
+  }
+  30% {
+    background-image: url('../images/clicando.png');
+    transform: translateY(5px) scale(0.95);
+  }
+  40% {
+    background-image: url('../images/cliqueaqui.png');
+    transform: translateY(0) scale(1);
+  }
+  50% {
+    background-image: url('../images/clicando.png');
+    transform: translateY(5px) scale(0.95);
+  }
+  60%,
+  100% {
+    background-image: url('../images/cliqueaqui.png');
+    transform: translateY(0) scale(1);
+    opacity: 1;
+  }
+}
+
+button {
+  margin-top: 10px;
+  font-size: 18px;
+  font-weight: bold;
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid black;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+  cursor: pointer;
+}
