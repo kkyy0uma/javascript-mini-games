@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Endless Runner</title>
+    <link rel="stylesheet" href="assets/css/base.css" />
+    <link rel="stylesheet" href="assets/css/gamerunner.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet" />
+  </head>
+
+  <body>
+    <header>
+      <div class="cabecalho-site">
+        <h1>Endless Runner</h1>
+      </div>
+    </header>
+      <nav class="nav-desafios">
+        <div class="nav-left">
+          <a href="index.html">Página Inicial</a>
+        </div>
+        <div class="nav-center">
+          <a href="gamerunner.html">Endless Runner</a>
+          <a href="gamecatch.html">Fruit Catch</a>
+        </div>
+      </nav>
+
+    <div class="container-start glass">
+      <div class="diffs">
+        <button class="btn-diff easy">FÁCIL</button>
+        <button class="btn-diff medium">MÉDIO</button>
+        <button class="btn-diff hard">DIFÍCIL</button>
+      </div>
+      <p class="diff-display">0</p>
+      <button class="btn-tutorial">Iniciar Jogo</button>
+      <img id="click" src="assets/images/cliqueaqui.png" alt="Clique para começar o jogo" />
+    </div>
+
+    <div class="container-game glass">
+      <a class="btn-restart"><img src="assets/images/reload.png" class="img-reload" /></a>
+      <a class="return-menu glass" href="gamerunner.html">Menu Inicial</a>
+      <div class="score">0</div>
+      <div class="difficulty">0</div>
+      <div class="result">0</div>
+      <img src="assets/images/bg-game.jpg" class="bg" />
+       <div class="player"><img src="assets/images/player.gif" class="player-sprite"/></div> 
+      <img src="assets/images/explode.gif" class="explosion" />
+      <!-- <div id="debugPlayer"></div>
+      <div id="debugObstacle"></div> -->
+    </div>
+
+    <div class="container-tutorial glass">
+      <p class="tutorial-message"><strong class="highlight2">SETA PARA CIMA</strong> ou <strong class="highlight2">BOTÃO ESQUERDO</strong> para pular!</p>
+      <p class="tutorial-message">
+        Não seja atingido pelos <strong class="highlight">OBSTÁCULOS!</strong>
+      </p>
+      <button class="btn-start">OK</button>
+    </div>
+
+    <footer>
+      <p>© 2026 | kyy0uma.code</p>
+    </footer>
+
+    <script src="gamerunner.js"></script>
+  </body>
+</html>
