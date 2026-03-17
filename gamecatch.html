@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Desafios</title>
+    <link rel="stylesheet" href="assets/css/base.css" />
+    <link rel="stylesheet" href="assets/css/gamecatch.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+  </head>
+
+  <body>
+    <header>
+      <div class="cabecalho-site">
+        <h1>Fruit Catch</h1>
+      </div>
+    </header>
+    <main>
+      <nav class="nav-desafios">
+        <div class="nav-left">
+          <a href="index.html">Página Inicial</a>
+        </div>
+        <div class="nav-center">
+          <a href="gamerunner.html">Endless Runner</a>
+          <a href="gamecatch.html">Fruit Catch</a>
+        </div>
+      </nav>
+
+    <div class="container-start glass">
+      <div class="diffs">
+        <button class="btn-diff easy">FÁCIL</button>
+        <button class="btn-diff medium">MÉDIO</button>
+        <button class="btn-diff hard">DIFÍCIL</button>
+      </div>
+      <p class="diff-display">0</p>
+      <button class="btn-tutorial">Iniciar Jogo</button>
+      <img id="click" src="assets/images/cliqueaqui.png" alt="Clique para começar o jogo" />
+    </div>
+
+    <div class="container-game glass">
+      <a class="btn-restart"><img src="assets/images/reload.png" class="img-reload" /></a>
+      <a class="return-menu glass" href="gamecatch.html">Menu Inicial</a>
+
+      <img src="assets/images/bg-catch6.png" class="bg">
+      <div class="bg2"></div>
+      
+      <div class="score">0</div>
+      <div class="difficulty">0</div>
+      <div class="result">0</div>
+      <div class="result2">0</div>
+      <div class="health-display">0</div>
+      <div class="boost-display">APERTE B PARA UM IMPULSO!</div>
+      
+      <div class="player"></div>
+    </div>
+
+    <div class="leaderboard glass">
+      <h2>GOATS</h2>
+      <ol class="leaderboard-list"></ol>
+    </div>
+
+    <div class="container-tutorial glass">
+      <p class="tutorial-message">
+        <strong class="highlight2">SETA ESQUERDA</strong> e <strong class="highlight2">SETA DIREITA</strong> para mover-se!</p>
+      <p class="tutorial-message">
+        Ganhe pontos ao coletar as <strong class="highlight3">frutas</strong> que caem!</p>
+      <p class="tutorial-message">
+        <strong class="highlight">Cerejas douradas</strong> valem <strong class="highlight2">5 pontos</strong>, colete <strong class="highlight2">3</strong> para ganhar um <strong class="highlight2">BOOST</strong>!</p>
+
+      <button class="btn-start">OK</button>
+    </div>
+    </main> 
+
+    <footer>
+      <p>© 2026 | kyy0uma.code</p>
+    </footer>
+
+    <script src="gamecatch.js"></script>
+
+  </body>
+</html>
